@@ -1,0 +1,7 @@
+/*.main .title {
+	font-size: 2.5em;
+}*/
+
+.poster::after {
+	background-color: rgba(0,0,0,0.5);
+}

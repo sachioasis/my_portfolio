@@ -1,0 +1,11 @@
+.projects {
+	justify-content: space-between;
+}
+
+.project-item {
+	width: 32%;
+}
+
+/*.project-item .image:hover {
+	transform: scale(1.1);
+}

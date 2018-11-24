@@ -1,0 +1,125 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* general styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+body > .container {
+ max-width: 960px;
+ margin: 0 auto;
+ width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* header styles */
+.main {
+	display: flex;
+	padding: 1em;
+	border-bottom: 3px solid gray;
+	margin-bottom: 2.0em;
+	margin-top: 2.0em;
+	width: 100%;
+}
+
+.main .title {
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0 0 0 auto;
+	text-align: right;
+}
+
+.main .title .description {
+	display: block;
+	font-size: 0.5em;
+	font-weight: normal;
+	margin-top: 0.5em;
+}
+
+/* poster styles */
+.poster {
+	position: relative;
+	overflow: hidden;
+}
+
+.poster::after {
+	content: '';
+	position: relative;
+	display: block;
+	width: 960px;
+	padding-top: 53.333%;
+}
+
+.poster .poster-background {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+}
+
+.poster .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%) translateY(-50%);
+	color: white;
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0;
+	z-index: 2;
+}
+
+/* project section styles */
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projects .header {
+	color: rgb(100, 110, 110);
+	font-size: 1.5em;
+	margin: 1em 5px 1em;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.project-item {
+	text-align: center;
+	color: rgb(100, 110, 110);
+	margin-bottom: 2.0em;
+}
+
+.project-item img {
+	width: 300px;
+	height: 200px;
+	width: 100%;
+}
+
+.project-item .title {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0.3em 0;
+}
+
+.project-item .link {
+	font-size: 0.8em;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer {
+	background-color: #f1f1f1;
+	padding: 0.3em;
+}
+
